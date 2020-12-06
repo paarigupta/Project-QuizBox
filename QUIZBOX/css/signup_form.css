@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    min-height: 100vh;
+    background-image: url("../img/bg.png");
+    background-size: cover;
+}
+
+.container{
+     background-color: white !important; 
+   border-radius: 5px !important;
+   overflow: hidden !important;
+   min-width: 370px !important;
+}
+
+.header{
+    background-image: linear-gradient( 109.6deg,  rgba(238,58,136,1) 11.2%, rgba(128,162,245,1) 91.1% );
+    padding: 15px;
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.form{
+    padding: 20px;
+}
+
+.form-control{
+    margin: 3px auto 0;
+    position: relative;
+    padding: 5px;
+}
+
+.form-control label{
+    display: block;
+}
+
+.form-control input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 8px auto 2px;
+    border:1.5px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form button{
+    width: 100%;
+    display: block;
+    height: 2rem;
+    background-image: linear-gradient( 109.6deg,  rgba(238,58,136,1) 11.2%, rgba(128,162,245,1) 91.1% );
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.form-control .fa-exclamation-circle,
+.form-control .fa-check-circle
+{
+    position: absolute;
+    right: 15px;
+    top: 48px;
+    visibility: hidden;
+}
+
+.form-control.success input{
+    border:3px solid rgba(10, 194, 10, 0.774);
+}
+
+.form-control.success .fa-check-circle{
+    color: rgba(10, 194, 10, 0.774);
+    visibility: visible;
+}
+
+.form-control.error input{
+    border:3px solid red;
+}
+
+.form-control.error .fa-exclamation-circle{
+    color:red;
+    visibility: visible;
+}
+
+.form-control small{
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color: red;
+}
